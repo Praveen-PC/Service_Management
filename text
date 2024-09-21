@@ -1,0 +1,44 @@
+
+{/* <div className=' table-responsive mt-5 p-5'>
+<table class="table table-striped ">
+  <thead className='table-light'>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">COMPANY</th>
+      <th scope="col">DATE</th>
+      <th scope="col">PRODUCT</th>
+      <th scope='col'>TYPE</th>
+      <th scope='col'>QUANTITY</th>
+      <th scope='col'>SOLVEDQUANTITY</th>
+      <th scope='col'>REMARKS</th>
+      <th scope='col'>BY</th>
+      <th scope='col'>ACTION</th>
+    </tr>
+  </thead>
+  {
+    data.map((item)=>(
+        <tr>
+            <td>{item.id}</td>
+            <td>{item.company}</td>
+            <td>{item.date}</td>
+            <td>{item.product}</td>
+            <td>{item.type}</td>
+            <td>{item.quantity}</td>
+            <td>{item.solvedquantity}</td>
+            <td>{item.remarks}</td>
+            <td>{item.person}</td>
+            <tr>
+                <button className='btn btn-info'>edit</button>
+                <button className='btn btn-info'>delete</button>
+
+
+            </tr>
+            
+        </tr>
+    ))
+  }
+  <tbody>
+    
+  </tbody>
+</table>
+</div> */}
