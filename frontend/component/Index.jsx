@@ -16,6 +16,17 @@ const Index = () => {
   const [remarks, setRemarks] = useState("");
   const [person, setPerson] = useState("");
 
+  console.log(  company,
+    date,
+    motorName,
+    motorType,
+    product,
+    type,
+    quantity,
+    solvedQuantity,
+    remarks,
+    person,)
+
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
