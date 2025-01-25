@@ -26,7 +26,7 @@ const TableView = () => {
     }
     useEffect(()=>{
     server()
-    },[])
+    },[data])
 
 
 
@@ -44,7 +44,7 @@ const TableView = () => {
         },
         {
             name:'Date',
-            selector:row => row.date,
+            selector:row => new Date(row.date).toLocaleDateString()  ,
             sortable:true
         },
         { 
@@ -130,10 +130,12 @@ const TableView = () => {
         try {
             await axios.delete(`http://localhost:8000/delete/${id}`);
             console.log("Row deleted");
-    
+            
+           
             // Remove the deleted row from local state
             setdata((prevData) => prevData.filter(row => row.id !== id));
             setfiltersearch((prevData) => prevData.filter(row => row.id !== id));
+            server()
         } catch (err) {
             console.log(err);
         }
